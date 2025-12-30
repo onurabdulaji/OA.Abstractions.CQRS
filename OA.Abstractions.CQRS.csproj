@@ -4,10 +4,39 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <PackageId>OA.Abstractions.CQRS</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Onur Abdulaji</Authors>
+        <Description>CQRS abstractions for .NET — lightweight interfaces for Commands, Queries, Handlers and pipeline behaviors. Designed to integrate with MediatR and Wolverine.</Description>
+        <PackageTags>cqrs;mediatR;wolverine;abstractions;ddd;net9</PackageTags>
+
+        <RepositoryUrl>https://github.com/onurabdulaji/OA.Abstractions.CQRS</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <Deterministic>true</Deterministic>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSource>true</IncludeSource>
+
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
+
     <ItemGroup>
-      <PackageReference Include="OA.Result" Version="1.0.0" />
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+        <None Include="LICENSE" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="OA.Result" Version="1.0.0"/>
     </ItemGroup>
 
 </Project>
